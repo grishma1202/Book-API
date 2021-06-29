@@ -23,7 +23,6 @@ shapeAI.get("/", (req, res) => {
   return res.json({ books: database.books });
 });
 
-console.log(process.env.MONGO_URL);
 //Establish database connection
 mongoose.
 connect(process.env.MONGO_URL, 
